@@ -1,0 +1,12 @@
+body {
+  background: url('../public/images/rival-tomatoes-bg.png') no-repeat center
+    bottom;
+  background-size: 100% auto;
+  background-color: black;
+  height: 110vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
