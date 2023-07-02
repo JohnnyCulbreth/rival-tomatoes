@@ -14,9 +14,7 @@ The application is built using React for the frontend, express and Puppeteer for
 
 ---
 
-# ReadMe
-
-## Rival Tomatoes: A Rotten Tomatoes Score Comparer
+# Rival Tomatoes: A Rotten Tomatoes Score Comparer
 
 Welcome to the Movie Battle app, a unique tool that lets you compare the Tomatometer scores of two movies. This app is ideal for movie enthusiasts looking to compare scores quickly, or for those engaged in a friendly debate on which movie fares better.
 
