@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# About
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This simple, yet intuitive, web application allows users to compare the Tomatometer score of two movies from the Rotten Tomatoes website. Given the lack of a public API for Rotten Tomatoes, the app uses the Puppeteer library to scrape data directly from the movie's page.
 
-## Available Scripts
+The comparison is based on the structure of the movie's URL in the format **https://www.rottentomatoes.com/m/movie_name**. In about 80% of cases, the **movie_name** simply corresponds to the actual name of the movie, such as **https://www.rottentomatoes.com/m/once_upon_a_time_in_hollywood**. However, due to the nature of URL formation and potential special characters in a movie's name, this may not always hold true. This method serves as the best non-API workaround and users should be aware of this limitation.
 
-In the project directory, you can run:
+The application is built using React for the frontend, express and Puppeteer for the backend, and Material-UI for UI components.
 
-### `npm start`
+![rival-tomatoes1](https://github.com/JohnnyCulbreth/rival-tomatoes/assets/102640510/e1eb5cb0-600d-44be-86d8-30fa366c4ea0)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![rival-tomatoes2](https://github.com/JohnnyCulbreth/rival-tomatoes/assets/102640510/d05500a1-2fe7-479c-a6c0-d2c388df4f28)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![rival-tomatoes3](https://github.com/JohnnyCulbreth/rival-tomatoes/assets/102640510/e1e692ad-aa81-44f0-a1ea-50341b110d91)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# ReadMe
 
-### `npm run build`
+## Rival Tomatoes: A Rotten Tomatoes Score Comparer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Welcome to the Movie Battle app, a unique tool that lets you compare the Tomatometer scores of two movies. This app is ideal for movie enthusiasts looking to compare scores quickly, or for those engaged in a friendly debate on which movie fares better.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app was created using the following technologies:
+- Frontend: React, Material-UI
+- Backend: Node.js, Express.js, Puppeteer (for web scraping)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+Clone the repository
+`git clone https://github.com/JohnnyCulbreth/rival-tomatoes.git`
+`cd rival-tomatoes`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install Dependencies
+`npm install`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run the Application
+Start the frontend:
+`npm start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+In another terminal, start the backend:
+`node server.js`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app should now be running on your local machine. Open **http://localhost:3000** to view it in your browser.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To use the app, enter the names of two movies you want to compare and click 'Compare'. The app will fetch the Tomatometer score, director, genre, and image from the respective Rotten Tomatoes pages of each movie and display them side by side.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Please note that the movie names are used to form the URL for the movie's page on Rotten Tomatoes. This method works most of the time, but may not be 100% accurate due to special characters or unusual naming conventions. In such cases, you may need to use the exact tail end of the Rotten Tomatoes URL as the movie name.
 
-### Code Splitting
+## Contribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Feel free to fork this repository, make changes, and open a pull request. Any contributions are greatly appreciated!
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Peace!
