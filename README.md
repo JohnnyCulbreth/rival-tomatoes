@@ -1,6 +1,6 @@
 # About
 
-This simple, yet intuitive, web application allows users to compare the Tomatometer score of two movies from the Rotten Tomatoes website. Given the lack of a public API for Rotten Tomatoes, the app uses the Puppeteer library to scrape data directly from the movie's page.
+This simple web application allows users to compare the Tomatometer score of two movies from the Rotten Tomatoes website. Given the lack of a public API for Rotten Tomatoes, the app uses the Puppeteer library to scrape data directly from the movie's page.
 
 The comparison is based on the structure of the movie's URL in the format **https://www.rottentomatoes.com/m/movie_name**. In about 80% of cases, the **movie_name** simply corresponds to the actual name of the movie, such as **https://www.rottentomatoes.com/m/once_upon_a_time_in_hollywood**. However, due to the nature of URL formation and potential special characters in a movie's name, this may not always hold true. This method serves as the best non-API workaround and users should be aware of this limitation.
 
@@ -16,7 +16,7 @@ The application is built using React for the frontend, express and Puppeteer for
 
 # Rival Tomatoes: A Rotten Tomatoes Score Comparer
 
-Welcome to the Movie Battle app, a unique tool that lets you compare the Tomatometer scores of two movies. This app is ideal for movie enthusiasts looking to compare scores quickly, or for those engaged in a friendly debate on which movie fares better.
+Welcome to Rival Tomatoes, a unique tool that lets you compare the Tomatometer scores of two movies. This app is ideal for movie enthusiasts looking to compare scores quickly, or for those engaged in a friendly debate on which movie fares better.
 
 The app was created using the following technologies:
 - Frontend: React, Material-UI
